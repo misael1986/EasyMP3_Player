@@ -2,7 +2,6 @@ package com.example.easymp3player
 
 import android.media.MediaPlayer
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 
@@ -22,7 +21,6 @@ class MainActivity : AppCompatActivity() {
         val mp3 = MediaPlayer.create(applicationContext, R.raw.duke_nukem_total_meltdownmental_heavy_2)
 
         boton1.setOnClickListener {
-
             // https://stackoverflow.com/questions/28613751/how-to-register-new-file-type-association-with-mp3
             if (mp2.isPlaying) { mp2.stop() }
             if (mp3.isPlaying) { mp3.stop() }
